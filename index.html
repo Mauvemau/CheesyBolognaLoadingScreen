@@ -3,13 +3,102 @@
   <head>
 
     <meta charset="utf-8">
+    <title>Cheesy Bologna Loading Screen</title>
     <meta name="description" content="Loading screen for Cheesy Bologna">
-    <title>Cheesy Bologna loading screen</title>
+    <meta name="author" content="Mauve">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-  <body style="background-color: black;">
+  <body>
 
-    <h1 style="color: aqua;">Loading...</h1>
+    <style>
+
+      body {
+        background-image: url("https://i.imgur.com/ghBYeym.jpg");
+      }
+
+      @font-face {
+        font-family: 'Another-America';
+        src:url('Another-America.ttf.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      .unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #title {
+        font-family: Another-America, monospace;
+        color: deeppink;
+        font-size: 5.0vw;
+        text-align: center;
+      }
+
+      .glow {
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+        }
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+        }
+      }
+
+      .white-border {
+        border-color: white;
+        border-width: 3px;
+        border-style: solid;
+        background-color: rgba(0,0,0, 0.8);
+        max-height: 25.0vw;
+      }
+
+      #news {
+        font-family: monospace;
+        color: #16AEDB;
+        font-size: 1vw;
+        width: 900px;
+      }
+
+      .news-text{
+        margin: 10px;
+      }
+
+    </style>
+
+    <div class="glow unselectable" id="title">
+      <h1>Cheesy Bologna Cinema</h1>
+    </div>
+
+    <div class="white-border unselectable" id="news" style="border-color: deeppink">
+      <p class="news-text"><big><b style="color:deeppink;">New</b></big><br>
+<br>
+      ● Arena:<br>
+      - New platforms.<br>
+      - Two new weapons, The Chaingun, and the Railgun.<br>
+      - Hud displaying health and armor.<br>
+      - New Power Ups, Damage Buff, Protection Buff and Invisibility.<br>
+<br>
+      ● New:<br>
+      - More playermodels.<br>
+      - RGB name and hud color picker now available to everyone for testing.<br>
+<br>
+      ● Changes:<br>
+      - Some changes in the hud.<br>
+<br>
+      ● Fixes:<br>
+      - Removed Nailgun, Super nailgun, and Lasser cannon from the arena.</p>
+    </div>
 
   </body>
 </html>

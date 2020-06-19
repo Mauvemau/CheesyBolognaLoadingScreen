@@ -1,0 +1,18 @@
+**Update**
+
+● Arena:
+- New platforms.
+- Two new weapons, The Chaingun, and the Railgun.
+- Hud displaying health and armor.
+- New Power Ups, Damage Buff, Protection Buff and Invisibility.
+
+● New:
+- New playermodels.
+- Color picker now available to everyone for testing.
+- Loading screen.
+
+● Changes:
+- Some slight changes in the hud.
+
+● Fixes:
+- Removed Nailgun, Super nailgun, and Lasser cannon from the arena, because they didn't work right.
